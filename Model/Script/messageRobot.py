@@ -1,5 +1,4 @@
 import requests
-
 import os
 
 
@@ -7,20 +6,19 @@ import os
 
 def barMessage(message: str):
 
-
     BARK_KEY = os.environ.get("BARK_KEY")
-    
+   
     DEVICE_KEY = os.environ.get("DEVICE_KEY")
 
     urlBase = "https://https://z.zzek.cn/"
 
-    url = url+BARK_KEY"
+    url = urlBase+BARK_KEY"
     headers = {
      'Content-Type': 'application/json; charset=utf-8'
     }
     data = {
-        "body": "Test Bark Server",
         "title": "Test Title",
+        "body": message,      
         "device_key": DEVICE_KEY,
         "badge": 1,
         "category": "myNotificationCategory",
