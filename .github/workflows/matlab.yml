@@ -46,7 +46,7 @@ jobs:
           pip3 install feedparser
           pip3 install Pillow
       - name: Bing picture download
-        run: /
+        run: 
           python3 Model/Script/Bing.py
       - name: Setup MATLAB
         uses: matlab-actions/setup-matlab@v1
