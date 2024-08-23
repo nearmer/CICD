@@ -12,7 +12,7 @@ def barMessage(message: str):
 
     urlBase = "https://https://z.zzek.cn/"
 
-    url = urlBase+BARK_KEY"
+    url = urlBase + BARK_KEY
     headers = {
      'Content-Type': 'application/json; charset=utf-8'
     }
