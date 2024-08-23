@@ -73,7 +73,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN  }}
-          tag_name: bingPic
+          tag_name: OnlybingPic
           draft: false
           prerelease: false
           files: /bing_images

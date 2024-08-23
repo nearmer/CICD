@@ -74,4 +74,4 @@ exist name 以数字形式返回 name 的类型。此列表描述与每个值关
 
 ## Bing热图
 
-![](/bing_images/image_0.jpg)
+![](../CICD/bing_images/image_0.jpg)
