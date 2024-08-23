@@ -25,8 +25,8 @@ def sendAll(message: str):
     KEY = ""
 
 
-    if(os.environ("WECHAT_KEY")):
-        KEY = os.environ("WECHAT_KEY")
+    
+    KEY = os.environ.get("WECHAT_KEY")
        
 
     urlBase = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key="
