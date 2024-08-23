@@ -16,7 +16,7 @@ def barMessage():
     return
 
 
-
+os.environ
 # This is a demo  for Wechat 
 
 
