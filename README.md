@@ -8,6 +8,7 @@
 - [使用Python安装依赖](#使用python安装依赖)
 - [V模型](#v模型)
 - [Bing热图](#bing热图)
+- [LICENSE](#license)
 
 
 
@@ -77,3 +78,8 @@ exist name 以数字形式返回 name 的类型。此列表描述与每个值关
 消失的图片
 
 ![](../CICD/bing_images/image_0.jpg)
+
+
+## LICENSE
+
+
