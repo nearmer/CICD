@@ -47,6 +47,7 @@ def sendAll(message: str):
 
     response  =  requests.post(url,headers=headers,json=data)
     records = response.json()
+    print(records)
     return records
 
 
