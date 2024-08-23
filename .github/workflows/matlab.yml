@@ -72,11 +72,11 @@ jobs:
       - name: Production Release
         uses: softprops/action-gh-release@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN}}
+          token: ${{ secrets.GITHUB_TOKEN  }}
           tag_name: bingPic
           draft: false
           prerelease: false
-          files: |
-            bing_images/bing_images.zip
+          files: bing_images/bing_images.zip
+            
               
           
