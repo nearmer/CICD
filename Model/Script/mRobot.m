@@ -23,7 +23,7 @@ ShowLog("Object model creation.........");
 
 %% Build the model
 
-SimmBuild();
+%SimmBuild();
 
 ShowLog("Build Running");
 
