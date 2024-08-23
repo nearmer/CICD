@@ -22,7 +22,7 @@ os.environ
 
 def sendAll(message: str):
 
-    KEY = ""
+   
 
 
     
@@ -32,6 +32,7 @@ def sendAll(message: str):
     urlBase = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key="
 
     url = urlBase+KEY
+    print(url)
     headers = {
         "Content-Type" : "application/json"
     }
