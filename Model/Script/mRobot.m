@@ -18,7 +18,7 @@ disp(isloaded);
 
 ShowLog("Bing pictute download");
 
-bingying();
+% bingying();
 
 
 %% Create  Model and Model Environment
