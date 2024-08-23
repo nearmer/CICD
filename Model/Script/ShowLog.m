@@ -23,6 +23,7 @@ function  ShowLog(event)
     % Send the POST request
     response = webwrite(url, data, options);
 
+    disp(response);
 
     disp(strcat('Info:',string(datetime),' Action :',event))
 
