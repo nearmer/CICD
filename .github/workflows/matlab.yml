@@ -76,7 +76,8 @@ jobs:
           tag_name: bingPic
           draft: false
           prerelease: false
-          files: bing_images/bing_images.zip
+          files: /bing_images
+            bing_images/bing_images.zip
             
               
           
