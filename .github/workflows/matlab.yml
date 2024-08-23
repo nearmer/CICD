@@ -45,6 +45,9 @@ jobs:
           pip3 install requests
           pip3 install feedparser
           pip3 install Pillow
+      - name: Set the Env
+        env:
+          WECHAT_KEY = ${{secrets.WECHAT_KEY}}
       - name: Bing picture download
         run:  
            # python3 Model/Script/Bing.py
