@@ -7,20 +7,21 @@ import os
 
 def barMessage(message: str):
 
-    BARK_KEY = "hL9WWJr4o8JjCZb5xj5yDF"
 
+    BARK_KEY = os.environ.get("BARK_KEY")
+    
+    DEVICE_KEY = os.environ.get("DEVICE_KEY")
 
-    KEY = os.environ.get("BARK_KEY")
     urlBase = "https://https://z.zzek.cn/"
 
-    url = url = "https://z.zzek.cn/hL9WWJr4o8JjCZb5xj5yDF"
+    url = url+BARK_KEY"
     headers = {
      'Content-Type': 'application/json; charset=utf-8'
     }
     data = {
         "body": "Test Bark Server",
         "title": "Test Title",
-        "device_key": "5e655d613d5262bd53d3599bb6ddf4f255aa670b5a1d3d21901353fc4235ac76",
+        "device_key": DEVICE_KEY,
         "badge": 1,
         "category": "myNotificationCategory",
         "sound": "minuet.caf",

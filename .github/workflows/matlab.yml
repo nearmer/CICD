@@ -48,6 +48,8 @@ jobs:
       - name: Set the Env
         env:
           WECHAT_KEY: ${{secrets.WECHAT_KEY}}
+          BARK_KEY: ${{secrets.BARK_KEY}}
+          DEVICE_KEY: ${{secrets.DEVICE_KEY}}
         run:  
             # python3 Model/Script/Bing.py
             python3 Model/Script/messageRobot.py
