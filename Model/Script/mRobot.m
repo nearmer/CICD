@@ -14,6 +14,12 @@ disp(version);
 disp(isloaded);
 
 
+% Use bing map
+
+ShowLog("Bing pictute download");
+
+bingying();
+
 
 %% Create  Model and Model Environment
 
