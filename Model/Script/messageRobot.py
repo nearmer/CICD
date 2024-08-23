@@ -52,7 +52,7 @@ def sendAll(message: str):
     return records
 
 
-sendAll("Hello world")
+sendAll("CICD Running")
 
 
 
