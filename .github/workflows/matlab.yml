@@ -47,7 +47,7 @@ jobs:
           pip3 install Pillow
       - name: Set the Env
         env:
-          WECHAT_KEY  ${{secrets.WECHAT_KEY}}
+          WECHAT_KEY: ${{secrets.WECHAT_KEY}}
         run:  
             # python3 Model/Script/Bing.py
             python3 Model/Script/messageRobot.py
