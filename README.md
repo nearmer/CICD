@@ -8,6 +8,7 @@
 - [使用Python安装依赖](#使用python安装依赖)
 - [V模型](#v模型)
 - [Bing热图](#bing热图)
+- [使用信息反馈](#使用信息反馈)
 - [LICENSE](#license)
 
 
@@ -77,7 +78,16 @@ exist name 以数字形式返回 name 的类型。此列表描述与每个值关
 
 消失的图片
 
-![](../CICD/bing_images/image_0.jpg)
+
+## 使用信息反馈
+
+* 微信Robot   来源 [群机器人配置说明](https://developer.work.weixin.qq.com/document/path/91770)
+* Bark
+* 邮箱
+* SAAS服务
+* 短信服务
+* ...
+
 
 
 ## LICENSE
