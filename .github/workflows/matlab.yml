@@ -1,0 +1,70 @@
+name: Run MATLAB Script on Self-Hosted Runner
+on:
+  push:
+    branches:    
+      - main
+env:
+  TZ: Asia/Shanghai
+
+permissions:
+  actions: write
+  checks:  write
+  contents: write
+  deployments: write
+  id-token: write
+  issues: write
+  discussions: write
+  packages: write
+  pages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
+jobs:
+  my-job:
+    name: Run MATLAB Script
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Check the Linux Memory
+        run: |
+            free -m
+            echo "Hello world"
+            uname -a
+            echo "cpu info"
+            cat /proc/cpuinfo
+            echo "sys info"
+            grep MemTotal /proc/meminfo
+      - name: Install The Environment
+        run: | 
+          pip3 install requests
+          pip3 install feedparser
+          pip3 install Pillow
+      - name: Setup MATLAB
+        uses: matlab-actions/setup-matlab@v1
+      - name: Run script
+        uses: matlab-actions/run-command@v1
+        with:
+          command: run('Model/Script/mRobot'); 
+      - name: Make File Commit   # need check the ENVIRONMENT
+        run: |
+          echo $(date) >> file.txt
+          git config --global user.email "nearmer@163.com"
+          git config --global user.name "nearmer"
+          git add .
+          git status
+      - name: Git Push
+        run: |
+          git diff 
+          git add .
+          git config --global user.email "nearmer@163.com"
+          git config --global user.name "nearmer"
+          git commit -m "commit "
+          git push  
+              
+          
