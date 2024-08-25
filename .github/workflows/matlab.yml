@@ -46,7 +46,7 @@ jobs:
           pip3 install feedparser
           pip3 install Pillow
           pip3 install feedparser
-          pip3 install 
+          pip3 install openai
       - name: Set the Env
         env:
           WECHAT_KEY: ${{secrets.WECHAT_KEY}}
